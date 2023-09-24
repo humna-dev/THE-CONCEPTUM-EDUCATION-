@@ -1,0 +1,1556 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>THE CONCEPTUM EDUCATION</title>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    #Our-plans {
+      background-color: #000;
+      /* Light blue background color */
+      padding: 20px;
+    }
+
+    /* Adjust the text color for better contrast */
+    #Our-plans h2,
+    #Our-plans p {
+      color: #fff;
+      /* White text color */
+    }
+
+
+    /* Style the Register button */
+    .register-button {
+      background-color: #000;
+      /* Button background color */
+      color: #fff;
+      /* Button text color */
+      font-weight: bold;
+    }
+
+    .register-button:hover {
+      background-color: #333;
+      /* Darker button color on hover */
+    }
+
+
+
+    .colorful-boxes {
+      background-color: #fff;
+      /* White background color */
+      padding: 20px;
+      margin-top: 20px;
+      /* Add margin to separate from the above section */
+    }
+
+    /* Add your custom CSS styles here */
+    .slider-container {
+      padding: 20px;
+    }
+
+    .educational-points {
+      padding: 20px;
+    }
+
+    /* Add space between sections */
+    section {
+      margin-bottom: 40px;
+    }
+
+
+    h2 {
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      font-size: 18px;
+      margin-top: 10px;
+    }
+
+    input[type="text"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      background-color: #101035;
+      color: #fff;
+      border: none;
+      border-radius: 15px;
+      margin-bottom: 10px;
+    }
+
+    button[type="submit"] {
+      background-color: #03233f;
+      color: #fff;
+      font-size: 18px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button[type="submit"]:hover {
+      background-color: #1556a0;
+    }
+
+    .accordion {
+      background-color: #333;
+      color: #0c0b0b;
+      border-radius: 5px;
+      margin: 10px 0;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .accordion h3 {
+      font-size: 20px;
+      padding: 10px;
+      margin: 0;
+    }
+
+    .panel {
+      display: none;
+      padding: 10px;
+    }
+
+    .active {
+      background-color: #444;
+    }
+
+    /* Customize the appearance of colorful boxes */
+    .colorful-box {
+      background-color: #ff5733;
+      /* Color for the first box */
+      color: #141414;
+      /* Text color for the first box */
+      padding: 20px;
+      /* Increase padding for a larger size */
+      margin-right: 20px;
+      display: inline-block;
+      width: 20%;
+      /* Set a fixed width for the boxes */
+      vertical-align: top;
+      /* Align boxes at the top */
+      
+    }
+
+    .colorful-box:nth-child(1) {
+      background-color: #f18f1f;
+      /* Color for the second box */
+      
+    }
+
+    .colorful-box:nth-child(2) {
+      background-color: #33ff57;
+      /* Color for the second box */
+    }
+
+    .colorful-box:nth-child(3) {
+      background-color: #5733ff;
+    }
+
+    .colorful-box:nth-child(4) {
+      background-color: #f78282;
+    }
+
+    .white-box,
+    .colorful-boxes {
+      text-align: center;
+      margin: 0 auto;
+    }
+
+    /* Additional Styles as Needed */
+
+    .slider-container {
+      padding: 20px;
+    }
+
+    .educational-points {
+      padding: 20px;
+    }
+
+    /* Add space between sections */
+    section {
+      margin-bottom: 40px;
+    }
+
+    /* Reduce the size of the slider images */
+    .carousel-inner img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+    }
+
+    .reviews,
+    .review-input {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      padding: 20px;
+      margin: 20px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    textarea {
+      width: 100%;
+      height: 100px;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+
+    button {
+      background-color: #007BFF;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    /* Custom CSS for vertical cards */
+    .card {
+      border: none;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      transition: transform 0.2s;
+    }
+
+    .card img {
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .card-body {
+      padding: 20px;
+    }
+
+    .card:hover {
+      transform: scale(1.02);
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    }
+
+
+
+    /* CSS for the Product Review Form */
+    h1 {
+      text-align: center;
+    }
+
+    form {
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    input[type="submit"] {
+      background-color: #0d0d0e;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #0c0c0c;
+    }
+
+    /* CSS for Displaying Reviews */
+    #reviews {
+      margin-top: 20px;
+    }
+
+    .review {
+      background-color: #000;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+
+    .review h3 {
+      margin: 0;
+      font-size: 18px;
+      color: #eff1f3;
+    }
+
+    .review p {
+      margin: 0;
+    }
+
+    /* Responsive Styling */
+    @media (max-width: 600px) {
+      form {
+        padding: 10px;
+      }
+    }
+
+    /* CSS for Displaying Reviews */
+    #reviews {
+      margin-top: 20px;
+    }
+
+    .review {
+      background-color: #fff;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      width: 70%;
+      /* Width of the review box */
+      margin: 0 auto;
+      /* Center the review box */
+    }
+
+    .review h3 {
+      margin: 0;
+      font-size: 18px;
+      color: #007BFF;
+    }
+
+    .review p {
+      margin: 0;
+    }
+
+    /* CSS for Rating Stars */
+    .rating {
+      font-size: 20px;
+      color: #f39c12;
+      /* Star color */
+    }
+
+    /* Responsive Styling */
+    @media (max-width: 600px) {
+      .review {
+        width: 90%;
+        /* Adjust the width for smaller screens */
+      }
+    }
+
+    .faculty-section {
+
+      background-color: #101035;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin: 20px;
+      color: #0a0a0a;
+
+    }
+
+    .faculty-card {
+      background-color: #fff;
+      width: 26%;
+      height: 5%;
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin: 10px;
+      text-align: center;
+      border-radius: 5px;
+    }
+
+    .faculty-image {
+      max-width: 100%;
+      height: auto;
+      border-radius: 0%;
+    }
+
+    /* Responsive Styling */
+    @media (max-width: 768px) {
+      .faculty-card {
+        width: 45%;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .faculty-card {
+        width: 100%;
+      }
+    }
+
+    .carousel-inner img {
+      object-fit: cover;
+      /* Images will be scaled to cover the container */
+      width: 100%;
+      /* Images will take 100% width of the container */
+      height: auto;
+      /* Height will be adjusted automatically to maintain aspect ratio */
+    }
+
+    /* CSS for Top Reviews Section */
+    .top-reviews-section {
+      background-color: #0f0f0f;
+      padding: 20px;
+    }
+
+    .review {
+      background-color: #fff;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+
+    .review h2 {
+      margin: 0;
+      font-size: 18px;
+      color: #000;
+    }
+
+    .review p {
+      margin: 0;
+    }
+
+    /* Responsive Styling */
+    @media (max-width: 768px) {
+      .review {
+        width: 100%;
+      }
+    }
+
+    /* CSS for FAQ and Picture Section */
+    .section-container {
+      background-color: #000;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 40px;
+    }
+
+    .picture-container {
+      flex: 1;
+      padding: 20px;
+    }
+
+    .picture-container img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .faq-container {
+      flex: 1;
+      padding: 20px;
+      background-color: #333;
+      border-radius: 10px;
+    }
+
+    .faq-container h2 {
+      font-size: 24px;
+    }
+
+    .faq-container p {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    .contact-button {
+      background-color: rgb(12, 12, 12);
+      color: rgb(236, 228, 228);
+      /* You can also use color: gray; for gray text */
+    }
+
+    /* CSS for Footer */
+    .footer {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    /* CSS for Icon Links */
+    .icon-link {
+      font-size: 24px;
+      margin: 0 10px;
+      color: #fff;
+      /* Icon color */
+      text-decoration: none;
+    }
+
+    .icon-link:hover {
+      color: #007bff;
+      /* Change color on hover */
+    }
+
+    /* Center-align the navigation links */
+    /* styles.css */
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .footer-logo img {
+      max-width: 100px;
+    }
+
+    .footer-about,
+    .footer-contact,
+    .footer-social {
+      flex: 1;
+      margin: 20px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      margin: 5px 0;
+    }
+
+    .footer-social img {
+      max-width: 30px;
+      margin-right: 10px;
+    }
+
+    /* Navbar styles */
+    .navbar {
+
+      padding: 10px 0;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Navbar brand styles */
+    .navbar-brand {
+      color: #fff;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    /* Navbar links styles */
+    .navbar-nav {
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .navbar-nav {
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      /* Center horizontally */
+      align-items: center;
+    }
+
+    /* Remove the margin for nav items */
+
+
+    .navbar-nav .nav-link {
+      color: #fff;
+      font-size: 18px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .navbar-nav .nav-link:hover {
+      color: #f8b400;
+    }
+
+    /* Register button styles */
+    .register-button {
+      background-color: #000;
+      color: #fff;
+      font-weight: bold;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-transform: uppercase;
+    }
+
+    .register-button:hover {
+      background-color: #333;
+    }
+
+    /* Add this CSS to change the delete button color to dark */
+    .delete-button {
+      background-color: #333;
+      /* Dark background color */
+      color: #fff;
+      /* Text color (white) */
+      font-weight: bold;
+      /* Make the text bold */
+      padding: 5px 10px;
+      /* Adjust padding */
+      border: none;
+      /* Remove border */
+      cursor: pointer;
+      /* Add pointer cursor on hover */
+      border-radius: 5px;
+      /* Add rounded corners */
+    }
+
+    .delete-button:hover {
+      background-color: #000;
+      /* Darker background color on hover */
+    }
+
+    /* Add responsive styles for smaller screens if necessary */
+    .colorful-boxes {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      
+      /* Adjust the gap between boxes as needed */
+    }
+
+    .colorful-box {
+      background-color: #ffffff;
+      /* Set the background color for the boxes */
+      text-align: center;
+      padding: 20px;
+      flex: 1;
+      
+      /* Distribute available space evenly among boxes */
+      max-width: 300px;
+      /* Limit the maximum width of each box */
+    }
+
+    /* Add responsive styles for smaller screens */
+    @media (max-width: 768px) {
+      .colorful-box {
+        max-width: 100%;
+      }
+
+      .box-text {
+        font-size: 16px;
+        /* Reduce the font size for smaller screens */
+      }
+    }
+
+    .review-card {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      background-color: #fff;
+      max-width: 400px;
+    }
+
+    /* Style for the review title */
+    .review-title {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    /* Style for the author name */
+    .author {
+      font-style: italic;
+      color: #888;
+      margin-top: 5px;
+    }
+
+    /* Style for the review text */
+    .review-text {
+      margin-top: 10px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: sans-serif;
+    }
+
+    .Reviewcontainer {
+      width: 100%;
+      color: white;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      background-color: #f9f9fc;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    .description {
+      text-align: center;
+      width: 90%;
+      /* Adjusted for responsiveness */
+    }
+
+    .clientImage {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .clientImage span {
+      margin-left: 10px;
+    }
+
+    .clientImage img {
+      width: 40px;
+    }
+
+    .reviewSection {
+      padding: 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-around;
+    }
+
+    .reviewItem {
+      width: 300px;
+      padding: 10px;
+      margin: 1rem;
+      cursor: pointer;
+      border-radius: 10px;
+      background-color: #10102a;
+      border: 1px solid #10102a;
+      transition: all 0.2s linear;
+    }
+
+    .reviewItem:hover {
+      border-color: rgb(37, 228, 228);
+      transform: scale(1.01);
+      background-color: #f8f8fc;
+      box-shadow: 0 0px 5px 0px #cbc0c0;
+    }
+
+    .top {
+      margin-bottom: 1rem;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .top ul {
+      display: flex;
+      list-style: none;
+    }
+
+    .top ul li {
+      padding-left: 4px;
+    }
+
+    article p {
+      font-size: 15px;
+      font-weight: 100;
+      margin-bottom: 1rem;
+      font-family: system-ui;
+      color: #000;
+    }
+
+    @media screen and (max-width: 700px) {
+      .container {
+        height: auto;
+      }
+
+      .description {
+        width: 90%;
+      }
+    }
+
+    @media screen and (max-width: 375px) {
+      .reviewSection {
+        padding: 0;
+      }
+
+      .reviewItem {
+        width: 100%;
+      }
+
+      .clientImage {
+        margin-bottom: 0.6rem;
+      }
+
+      .top {
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+      }
+    }
+    .colorDate{
+      color: #fff;
+    }
+   .Bannercontainer{
+    background-color:#101035 ;
+    color: white;
+   }
+   .slidercontainer{
+    color: white;
+    background-color:#101035 ;
+   }
+   .Keycontainer{
+    color: #101035;
+    background-color:#f5f5f8 ;
+   }
+   .textReview{
+    color: #000;
+   }
+ 
+  </style>
+
+</head>
+
+<body id="home">
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light ">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src="The_Conceptum_Education__20230913_214408-removebg-preview.png" alt=""
+            width="20%"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Review">Review</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#faculty">Faculty</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Register Button (Black Background) -->
+        <a class="btn btn-dark ml-auto" href="https://forms.gle/zRPt7hLdTCYfEzkZA" target="_blank">Register</a>
+
+
+
+      </div>
+    </nav>
+
+
+
+
+  </header>
+  <!-- Home page slider starts  -->
+  <section id="Register">
+    <div class="Bannercontainer" style="margin-top: 20px;">
+      <div class="row">
+        <!-- Left side with the image -->
+        <div class="col-md-6" data-aos="fade-up">
+          <img src="IMG-20230914-WA0056.jpg" alt="Your Image" style="width: 100%; max-height: 400px;">
+        </div>
+        <!-- Right side with text -->
+        <div class="col-md-6 text-box" data-aos="fade-down"> <!-- Updated class name -->
+          <h2>About Us</h2>
+          <p>The Conceptum Education is not just an institute; it's a journey of self-discovery and growth. We invite
+            you to be a part of our educational family, where we strive for excellence and nurture the leaders of
+            tomorrow.
+
+            Come, embark on your educational journey with us and unlock your full potential!</p>
+          <a href="https://forms.gle/zRPt7hLdTCYfEzkZA" target="_blank">
+            <button class="btn btn-success">Explor Now</button>
+          </a>
+
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+
+  <section class="container-fluid py-4 text-white" style="background-color: gray;">
+
+    <div class="white-box" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+      <h2 class="box-text">DO YOU WANT</h2>
+    </div>
+
+    <div class="colorful-boxes" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+      <div class="colorful-box">
+        <h3 class="box-text">The</h3>
+      </div>
+      <div class="colorful-box" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+        <h3 class="box-text">Bright</h3>
+      </div>
+      <div class="colorful-box" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+        <h3 class="box-text">Future</h3>
+      </div>
+      <div class="colorful-box" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+        <a href="https://forms.gle/zRPt7hLdTCYfEzkZA" target="_blank">
+          <i class="fas fa-arrow-circle-right fa-3x"></i>Click Here
+        </a>
+      </div>
+
+
+    </div>
+  </section>
+  <section class="container-fluid py-4"active style="background-color: #101035;">
+    <div class="row align-items-center" data-aos="fade-up">
+        <!-- Slider Section -->
+        <div class="col-md-6">
+            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="302425045_1114830526131413_685866920569981736_n.jpg" class="d-block w-100" alt="Slider Image 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="IMG-20230914-WA0057.jpg" class="d-block w-100" alt="Slider Image 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="IMG-20230828-WA0073.jpg" class="d-block w-100" alt="Slider Image 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="324745426_1485149751978355_7082908921756607310_n.jpg" class="d-block w-100" alt="Slider Image 4">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExample" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExample" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </a>
+            </div>
+        </div>
+        <!-- Four white background text boxes on the other side -->
+        <div class="col-md-6">
+            <div class="row" data-aos="fade-up">
+                <div class="col-12 col-md-6">
+                    <div class="card p-4 text-center" style="background-color: #333; color: #fff;">
+                        <h4 class="p-2">Work-readiness</h4>
+                        <p>We provide an array of bridging, foundational, and work-readiness programmes to give our youth the skills they need to access the workspace.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6" data-aos="fade-up">
+                    <div class="card p-4 text-center" style="background-color: #333; color: #fff;">
+                        <h4 class="p-2">Accredited skills programmes</h4>
+                        <p>Yes, we are accredited. The Skills Programme comprises a cluster of unit standards derived from the same qualification.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6" data-aos="fade-up">
+                    <div class="card p-4 text-center" style="background-color: #333; color: #fff;">
+                        <h4 class="p-2">Workshops</h4>
+                        <p>Gain access to our courses and workshops that enhance operational performance. It equips individuals with the tools and knowledge needed to pursue their career aspirations.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6" data-aos="fade-up">
+                    <div class="card p-4 text-center" style="background-color: #333; color: #fff;">
+                        <h4 class="p-2">Empower</h4>
+                        <p>It prepares individuals to be informed and engaged citizens in society. Academic education empowers students to make meaningful contributions to their communities and the world.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <section class="container-fluid py-4 text-white" style="background-color: gray;">
+    <div class="Keycontainer active" data-aos="fade-down">
+      <div class="row align-items-center">
+        <!-- Slider Section -->
+        <div class="col-md-6" data-aos="flip-left" data-aos="fade-down">
+          <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="IMG-20230916-WA0048.jpg" class="d-block w-100 " alt="Slider Image 1" style="height: 400px;">
+              </div>
+              <div class="carousel-item">
+                <img src="IMG-20230916-WA0049.jpg" class="d-block w-100" alt="Slider Image 2" style="height: 400px;">
+              </div>
+              <div class="carousel-item">
+                <img src="IMG-20230916-WA0050.jpg" class="d-block w-100" alt="Slider Image 3" style="height: 400px;">
+              </div>
+              <div class="carousel-item">
+                <img src="IMG-20230916-WA0051.jpg" class="d-block w-100" alt="Slider Image 3" style="height: 400px;">
+              </div>
+
+
+            </div>
+            <a class="carousel-control-prev" href="#carouselExample" role="button" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExample" role="button" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </a>
+          </div>
+        </div>
+        <!-- Educational Points Section -->
+        <div class="col-md-6 educational-points" data-aos="flip-right" data-aos="fade-down">
+          <div class="py-5 px-4">
+            <h2 class="mb-4">Key Educational Points</h2>
+            <ul class="list-group">
+              <li class="list-group-item border-0">
+                <i class="fas fa-check-circle text-success me-2"></i>
+                <strong>Point 1:</strong> The importance of a strong foundation in education, starting with proper
+                learning and understanding.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </li>
+              <li class="list-group-item border-0">
+                <i class="fas fa-check-circle text-success me-2"></i>
+                <strong>Point 2:</strong>Education requires dedication and hard work, as implied by the mention of labor
+                and effort.
+              </li>
+              <li class="list-group-item border-0">
+                <i class="fas fa-check-circle text-success me-2"></i>
+                <strong>Point 3:</strong> The need for attention to detail and thoroughness in the pursuit of knowledge
+                and skills.
+              </li>
+              <li class="list-group-item border-0">
+                <i class="fas fa-check-circle text-success me-2"></i>
+                <strong>Point 4:</strong> The need for practical application of knowledge, suggesting that education
+                should prepare individuals for real-world challenges.
+              </li>
+              <li class="list-group-item border-0">
+                <i class="fas fa-check-circle text-success me-2"></i>
+                <strong>Point 5:</strong> The idea that education can lead to a deeper understanding of complex issues
+                and can contribute to societal progress..
+              </li>
+              <li class="list-group-item border-0">
+                <i class="fas fa-check-circle text-success me-2"></i>
+                <strong>Point 6:</strong> The responsibility of educators and institutions in
+                shaping the character and ethical values of individuals.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="faculty" class="container-fluid py-4 text-white" style="background-color: #333;">
+    <h1 class="text-center mb-4">Faculty Members</h1>
+    <div class="faculty-section row justify-content-center">
+      <!-- Faculty Member 1 -->
+      <div class="faculty-card col-md-4 m-3 p-3 text-center" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
+        <img src="IMG_20230917_183020.jpg" alt="Faculty Member 1" class="faculty-image">
+        <h2 class="mt-3">ENGR. Mustufa Chohan</h2>
+        <p>Civil Engineer From Ned University</p>
+      </div>
+
+      <!-- Faculty Member 2 -->
+      <div class="faculty-card col-md-4 m-3 p-3 text-center" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
+        <img src="IMG-20230916-WA0009.jpg" alt="Faculty Member 2" class="faculty-image">
+        <h2 class="mt-3">ENGR. Sammer Ahmed</h2>
+        <p>Electronic Engineer From Iqra University</p>
+      </div>
+
+      <!-- Faculty Member 3 -->
+      <div class="faculty-card col-md-4 m-3 p-3 text-center" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
+        <img src="IMG_20230917_183032.jpg" alt="Faculty Member 3" class="faculty-image">
+        <h2 class="mt-3">Mrs. Nitasha Hunain</h2>
+        <p>B.COM & B.ED From BBSUL</p>
+      </div>
+
+      <!-- Faculty Member 4 -->
+      <div class="faculty-card col-md-4 m-3 p-3 text-center" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
+        <img src="IMG_20230917_183003.jpg" alt="Faculty Member 4" class="faculty-image">
+        <h2 class="mt-3">Humna Allauddin</h2>
+        <p>Under Graduation in BSCS From BBSUL <br> & MERN STACK Developer From Banoqabil</p>
+      </div>
+
+      <!-- Faculty Member 5 -->
+      <div class="faculty-card col-md-4 m-3 p-3 text-center" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
+        <img src="IMG_20230917_225756.jpg " alt="Faculty Member 5" class="faculty-image">
+        <h2 class="mt-3">Gulzareen Nomann</h2>
+        <p>Being MBBS</p>
+      </div>
+    </div>
+  </section>
+  <section id="Review"  class="container-fluid py-4 text-white" style="background-color: gray;">
+
+    <!-- Main Container for Clients Review -->
+    <div class="Reviewcontainer"data-aos="fade-down">
+      <h2 class="textReview"> Our Top Review </h2>
+      <p class="description"></p>
+
+      <!-- Clients Review Section -->
+      <div class="reviewSection">
+
+        <!-- Clients Review-1 Section Starts from Here  -->
+        <div class="reviewItem"data-aos="fade-up">
+          <div class="top">
+            <div class="clientImage">
+              <img src="" alt="">
+              <span>Daad Raheem</span>
+            </div>
+            <ul>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+            </ul>
+          </div>
+          <article>
+            <p class="review"> My time at The Conceptum Education Institute was transformative. I not only gained valuable knowledge but also formed lasting connections with both fellow students and faculty. The institute's commitment to excellence shines through in every aspect of its operation.
+!</p>
+            <p class="colorDate">Jan 22, 2023</p>
+          </article>
+        </div>
+
+        <!-- Clients Review-2 Section Starts from Here  -->
+        <div class="reviewItem"data-aos="fade-up">
+          <div class="top">
+            <div class="clientImage">
+              <img src="./client.png" alt="">
+              <span> Dua Arif</span>
+            </div>
+            <ul>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-regular fa-star"></i></li>
+              <li><i class="fa-regular fa-star"></i></li>
+            </ul>
+          </div>
+          <article>
+            <p class="review"> The institute's facilities are top-notch. The classrooms are modern and well-equipped,
+              creating an ideal learning environment. The library and study spaces are also excellent for research and
+              self-study.!</p>
+            <p class="colorDate">March 01, 2022</p>
+          </article>
+        </div>
+
+        <!-- Clients Review-3 Section Starts from Here  -->
+        <div class="reviewItem"data-aos="fade-up">
+          <div class="top">
+            <div class="clientImage">
+              <img src="./client.png" alt="">
+              <span>Maria Haaroon</span>
+            </div>
+            <ul>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-regular fa-star"></i></li>
+            </ul>
+          </div>
+          <article>
+            <p class="review">The support services at The Conceptum Education Institute are exceptional. The administrative staff is
+              friendly and always ready to assist with any administrative matters. </p>
+            <p class="colorDate">Dec 08, 2021</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section style="background-color: #f3ebeb;">
+    <div class="Formcontainer">
+      <div class="row">
+        <!-- Left side with the image -->
+        <div class="col-md-6" style="display: flex; align-items: center;" data-aos="fade-up">
+          <img src="undraw_Feedback_re_urmj.png" alt="Your Image" style="width: 90%; height: 90%;">
+        </div>
+
+        <!-- Right side with the review form -->
+        <div class="col-md-6 form-container" data-aos="fade-down">
+          <h1>Review Form</h1>
+          <form id="reviewForm">
+            <label for="Name">Name:</label>
+            <input type="text" id="Name" name="Name" required><br><br>
+
+            <label for="rating">Rating (1-5):</label>
+            <input type="number" id="rating" name="rating" min="1" max="5" required><br><br>
+
+            <label for="review">Review:</label><br>
+            <textarea id="reviewText" name="reviewText" rows="4" required></textarea><br><br>
+
+            <input type="submit" value="Submit Review">
+          </form>
+        </div>
+        <div id="reviews" class="review display" data-aos="zoom-out-down">
+          <!-- Reviews will be displayed here -->
+        </div>
+
+        <script>
+          document.addEventListener("DOMContentLoaded", function () {
+            const reviewForm = document.getElementById("reviewForm");
+            const reviewsContainer = document.getElementById("reviews");
+
+            reviewForm.addEventListener("submit", function (e) {
+              e.preventDefault();
+
+              const Name = document.getElementById("Name").value;
+              const rating = document.getElementById("rating").value;
+              const reviewText = document.getElementById("reviewText").value;
+
+              const reviewElement = document.createElement("div");
+              reviewElement.classList.add("review");
+
+              const reviewContent = `
+                      <h3>${Name}</h3>
+                      <p class="rating">${'★'.repeat(rating)}</p>
+                      <p><strong>Review:</strong></p>
+                      <p>${reviewText}</p>
+                  `;
+
+              reviewElement.innerHTML = reviewContent;
+              reviewsContainer.appendChild(reviewElement);
+
+              // Save the review to localStorage
+              const storedReviews = JSON.parse(localStorage.getItem("reviews")) || [];
+              storedReviews.push({ Name, rating, reviewText });
+              localStorage.setItem("reviews", JSON.stringify(storedReviews));
+
+              // Clear the form fields
+              document.getElementById("Name").value = "";
+              document.getElementById("rating").value = "";
+              document.getElementById("reviewText").value = "";
+            });
+
+            // Display submitted reviews from localStorage on page load
+            const storedReviews = JSON.parse(localStorage.getItem("reviews")) || [];
+            storedReviews.forEach((review) => {
+              const reviewElement = document.createElement("div");
+              reviewElement.classList.add("review");
+
+              const reviewContent = `
+                      <h3>${review.Name}</h3>
+                      <p class="rating">${'★'.repeat(review.rating)}</p>
+                      <p><strong>Review:</strong></p>
+                      <p>${review.reviewText}</p>
+                  `;
+
+              reviewElement.innerHTML = reviewContent;
+              reviewsContainer.appendChild(reviewElement);
+            });
+          });
+        </script>
+  </section>
+
+  <section class="section-container" style="background: #101035;">
+    <div class="row">
+    <div class="picture-container" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+      <div class="image-container">
+        <img src="undraw_faq_re_31cw.svg" alt="Description of the image">
+    </div>
+    
+    </div>
+    </div>
+    <!-- Right Side - Questions -->
+    <div class="faq-container" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
+      <div class="container-fluid">
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item ">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                Do institutes provide study notes?
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Yes, institutes typically provide study notes to help students with their
+                studies.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                "What is the admission process?"
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">You can contact the institute directly to inquire about admission ther
+                relevant details </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                How can I get information about fees and other details?
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">You can contact the institute directly to inquire about fees and other
+                relevant details</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- question section ends  -->
+
+  </section>
+  <section id="Contact" class="bg-light py-5">
+    <div class="container">
+      <div class="row">
+        <!-- Contact Info -->
+        <div class="col-md-6">
+          <div class="contact-info">
+            <h3 class="mb-4">Contact Us</h3>
+            <p>
+              Our Marketing Head, Durresham Rajput, is here to assist you. If you have any questions or need assistance, feel free to contact her.
+            </p>
+            <ul class="list-unstyled">
+              <li><i class="fas fa-envelope"></i> Email: <a href="mailto:durrajm.faiq2002@gmail.com">durrajm.faiq2002@gmail.com</a></li>
+              <li><i class="fas fa-phone"></i> Phone: <a href="tel:+1234567890">0322-2441415</a></li>
+              <li><i class="fas fa-phone"></i> CEO: <a href="tel:+1234567890">0322-2214594</a></li>
+            </ul>
+          </div>
+        </div>
+  
+        <!-- Contact Form -->
+        <div class="col-md-6">
+          <div class="contact-form">
+            <button class="btn btn-primary btn-lg contact-button" data-bs-toggle="modal" data-bs-target="#contactModal">
+              Get In Touch
+            </button>
+            
+              <button id="findUsButton" class="btn btn-primary btn-lg contact-button" data-bs-toggle="modal" data-bs-target="#contactModal">Find Us</button>
+           
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Contact Us Modal -->
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Contact Us</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Your Name">
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Your Email">
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <!-- Instagram Icon with Link -->
+            <a href="https://instagram.com/_the_conceptum_education?utm_source=qr&igshid=MzNlNGNkZWQ4Mg=="
+              target="_blank" class="btn btn-light">
+              <i class="fab fa-instagram"></i> Instagram
+            </a>
+  
+            <!-- Facebook Icon with Link -->
+            <a href="https://www.facebook.com/profile.php?id=100063627147028&mibextid=nW3QTL" target="_blank"
+              class="btn btn-light">
+              <i class="fab fa-facebook"></i> Facebook
+            </a>
+  
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" onclick="sendForm()">Send</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+    const findUsButton = document.getElementById("findUsButton");
+  
+    findUsButton.addEventListener("click", function () {
+      // Replace 'Findus.html' with the actual path or URL of your "Findus.html" page
+      window.location.href = "Findus.html";
+    });
+  </script>
+  </form>
+
+  </div>
+
+
+
+  </div>
+
+
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form action="">
+            <div class="form-floating mb-3">
+              <input required type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+              <label for="floatingInput">Email address</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input required type="password" class="form-control" id="floatingPassword" placeholder="Password">
+              <label for="floatingPassword">Password</label>
+            </div>
+
+            <div class="form-floating mb-3 ">
+              <input required type="text" class="form-control" id="floatingPhone" placeholder="+1-000-0000000">
+              <label for="floatingPhone">Phone</label>
+            </div>
+
+
+
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="submit" class="btn btn-dark">Send</button>
+        </div>
+      </div>
+      </form>
+    </div>
+  </div>
+  <!-- end modal  -->
+
+  <section>
+
+    <footer id="myFooter">
+      <div class="container">
+        <div class="footer-logo">
+          <img src="The_Conceptum_Education__20230913_214408-removebg-preview.png" alt="Institute Logo">
+        </div>
+        <div class="footer-about">
+          <h3>About Us</h3>
+          <p>" The Conceptum Education provides the path for society to prosper, develop, and harmonize."
+
+            "Through education, we nurture our mind, body, and soul, becoming capable and aware citizens.</p>
+        </div>
+        <div class="footer-contact">
+          <h3>Contact Us</h3>
+          <ul>
+            <li>Email: mustufachohan9@gmail.com</li>
+            <li>Phone: 0322 2214594</li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <h3>Follow Us</h3>
+          <ul>
+            <a href="https://instagram.com/_the_conceptum_education?utm_source=qr&igshid=MzNlNGNkZWQ4Mg=="
+              target="_blank" class="btn btn-light">
+              <i class="fab fa-instagram"></i> Instagram
+            </a>
+
+            <!-- Facebook Icon with Link -->
+            <a href="https://www.facebook.com/profile.php?id=100063627147028&mibextid=nW3QTL" target="_blank"
+              class="btn btn-light">
+              <i class="fab fa-facebook"></i> Facebook
+            </a>
+          </ul>
+          &copy; 2023 The Conceptum Education. All rights reserved.
+          <p>Created By Humna Allauddin</p>
+        </div>
+      </div>
+    </footer>
+
+
+  </section>
+  <script>
+    function sendForm() {
+      // Process your form data here
+      // You can show an alert to indicate that the form has been submitted
+      alert("Form submitted successfully!");
+
+      // Close the modal
+      var contactModal = new bootstrap.Modal(document.getElementById('contactModal'));
+      contactModal.hide();
+    }
+  </script>
+  
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    AOS.init();
+  </script>
+  <!-- Add Bootstrap 5 JS (place this after your jQuery) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/js/bootstrap.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
